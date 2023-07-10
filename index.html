@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customers</title>
+  <link rel="stylesheet" href="Styles/main.css">
+</head>
+
+<body>
+  <header>
+    <h2>Logo</h2>
+    <input type="text" id="search-input" placeholder="Search by name...">
+
+        <fieldset id="filter">
+            <legend>Filter by Category:</legend>
+            <label class="filter-label">
+              <input type="checkbox" value="category1" class="filter-checkbox">
+              Category 1
+            </label>
+            <label class="filter-label">
+              <input type="checkbox" value="category2" class="filter-checkbox">
+              Category 2
+            </label>
+            <label class="filter-label">
+              <input type="checkbox" value="category3" class="filter-checkbox">
+              Category 3
+            </label>
+          </fieldset>
+
+    <fieldset>
+        <legend>Sorting:</legend>
+        <select id="sort-select">
+            <option value="null" disabled>--Sort--</option>
+            <option value="firstName">First Name</option>
+            <option value="lastName">Last Name</option>
+            <option value="category">Category</option>
+          </select>
+    </fieldset>
+  </header>
+  <main>
+    <div id="card-container"></div>
+    <div id="pagination"></div> 
+  </main>
+  <script src="Scripts/api.js"></script>
+  <script src="Scripts/renderer.js"></script>
+  <script src="Scripts/filter.js"></script>
+  <script src="Scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #filter {
+    display: flex;
+    align-items: center;
+  }
+  
+  #filter label {
+    margin-right: 10px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Card styles */
+  .card {
+    width: 50%;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .category {
+    align-self: flex-end;
+    background-color: #555;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
+  #card-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Align cards in the center horizontally */
+    align-items: center; /* Align cards in the center vertically */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
+  }
+
+  #search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  /* SORT */
+  
+  #sort-select {
+    padding: 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    color: #555;
+    appearance: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #sort-select:hover {
+    background-color: #eaeaea;
+  }
+  
+  #sort-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #999;
+  }
+  
+  #sort-select option {
+    background-color: #f9f9f9;
+    color: #555;
+  }
+  
+
+  /* Responsive styles */
+  @media (min-width: 768px) {
+    .card {
+      margin-right: 20px;
+    }
+  }
